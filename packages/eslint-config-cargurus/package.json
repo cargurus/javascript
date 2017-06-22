@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-airbnb",
+  "name": "eslint-config-cargurus",
   "version": "15.0.1",
-  "description": "Airbnb's ESLint config, following our styleguide",
+  "description": "Cargurus's ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
     "prelint": "editorconfig-tools check * rules/* test/*",
@@ -10,43 +10,27 @@
     "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
     "test": "npm run --silent tests-only",
-    "travis": "cd ../eslint-config-airbnb-base && npm install && npm link && cd - && npm link eslint-config-airbnb-base && npm run --silent test ; npm unlink eslint-config-airbnb-base >/dev/null &"
+    "travis": "cd ../eslint-config-cargurus-base && npm install && npm link && cd - && npm link eslint-config-cargurus-base && npm run --silent test ; npm unlink eslint-config-cargurus-base >/dev/null &"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/airbnb/javascript"
+    "url": "https://github.com/cargurus/javascript"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
     "config",
-    "airbnb",
+    "cargurus",
     "javascript",
     "styleguide"
   ],
-  "author": "Jake Teton-Landis (https://twitter.com/@jitl)",
-  "contributors": [
-    {
-      "name": "Jake Teton-Landis",
-      "url": "https://twitter.com/jitl"
-    },
-    {
-      "name": "Jordan Harband",
-      "email": "ljharb@gmail.com",
-      "url": "http://ljharb.codes"
-    },
-    {
-      "name": "Harrison Shoff",
-      "url": "https://twitter.com/hshoff"
-    }
-  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
+    "url": "https://github.com/cargurus/javascript/issues"
   },
-  "homepage": "https://github.com/airbnb/javascript",
+  "homepage": "https://github.com/cargurus/javascript",
   "dependencies": {
-    "eslint-config-airbnb-base": "^11.2.0"
+    "eslint-config-cargurus-base": "^11.2.0"
   },
   "devDependencies": {
     "babel-preset-airbnb": "^2.2.3",
