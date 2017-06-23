@@ -18,14 +18,14 @@ module.exports = {
     },
     'import/extensions': [
       '.js',
-      '.jsx',
+      '.jsx'
     ],
     'import/core-modules': [
     ],
     'import/ignore': [
       'node_modules',
       '\\.(coffee|scss|css|less|hbs|svg|json)$',
-    ],
+    ]
   },
 
   rules: {
@@ -75,16 +75,17 @@ module.exports = {
         '**/__tests__/**', // jest pattern
         'test.{js,jsx}', // repos with a single test file
         'test-*.{js,jsx}', // repos with multiple top-level test files
-        '**/*.{test,spec}.{js,jsx}', // tests where the extension denotes that it is a test
+        '**/*.{test,spec,config}.{js,jsx}', // tests where the extension denotes that it is a test
+        '**/webpack-*.js', // webpack config
         '**/webpack.config.js', // webpack config
         '**/webpack.config.*.js', // webpack config
         '**/rollup.config.js', // rollup config
         '**/rollup.config.*.js', // rollup config
         '**/gulpfile.js', // gulp config
         '**/gulpfile.*.js', // gulp config
-        '**/Gruntfile', // grunt config
+        '**/Gruntfile' // grunt config
       ],
-      optionalDependencies: false,
+      optionalDependencies: false
     }],
 
     // Forbid mutable exports
@@ -138,7 +139,7 @@ module.exports = {
     // TODO: enable?
     'import/order': ['off', {
       groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-      'newlines-between': 'never',
+      'newlines-between': 'never'
     }],
 
     // Require a newline after the last import/require in a group
@@ -147,7 +148,7 @@ module.exports = {
 
     // Require modules with a single export to use a default export
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
-    'import/prefer-default-export': 'error',
+    'import/prefer-default-export': 'warn',
 
     // Restrict which files can be imported in a given folder
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-restricted-paths.md
@@ -168,7 +169,7 @@ module.exports = {
     // prevent importing the submodules of other modules
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md
     'import/no-internal-modules': ['off', {
-      allow: [],
+      allow: []
     }],
 
     // Warn if a module could be mistakenly parsed as a script by a consumer
@@ -189,6 +190,6 @@ module.exports = {
 
     // Prevent importing the default as if it were named
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
-    'import/no-named-default': 'error',
+    'import/no-named-default': 'error'
   },
 };

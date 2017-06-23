@@ -1,12 +1,12 @@
 module.exports = {
   plugins: [
-    'react',
+    'react'
   ],
 
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
 
   // View link below for react rules documentation
@@ -28,8 +28,8 @@ module.exports = {
         'shouldComponentUpdate',
         'componentWillUpdate',
         'componentDidUpdate',
-        'componentWillUnmount',
-      ],
+        'componentWillUnmount'
+      ]
     }],
 
     // Prevent missing displayName in a React component definition
@@ -46,7 +46,7 @@ module.exports = {
 
     // Validate closing bracket location in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md
-    'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
+    'react/jsx-closing-bracket-location': ['error', 'after-props'],
 
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
@@ -56,12 +56,12 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
     'react/jsx-handler-names': ['off', {
       eventHandlerPrefix: 'handle',
-      eventHandlerPropPrefix: 'on',
+      eventHandlerPropPrefix: 'on'
     }],
 
     // Validate props indentation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md
-    'react/jsx-indent-props': ['error', 2],
+    'react/jsx-indent-props': 'off',
 
     // Validate JSX has key prop when in array or iterator
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
@@ -76,7 +76,7 @@ module.exports = {
     'react/jsx-no-bind': ['error', {
       ignoreRefs: true,
       allowArrowFunctions: true,
-      allowBind: false,
+      allowBind: false
     }],
 
     // Prevent duplicate props in JSX
@@ -178,7 +178,7 @@ module.exports = {
 
     // Require stateless functions when not using lifecycle methods, setState or ref
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
-    'react/prefer-stateless-function': ['error', { ignorePureComponents: true }],
+    'react/prefer-stateless-function': ['warn', { ignorePureComponents: true }],
 
     // Prevent missing props validation in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
@@ -207,7 +207,7 @@ module.exports = {
         'everything-else',
         '/^render.+$/',
         'render'
-      ],
+      ]
     }],
 
     // Prevent missing parentheses around multilines JSX
@@ -216,12 +216,12 @@ module.exports = {
       declaration: true,
       assignment: true,
       return: true,
-      arrow: true,
+      arrow: true
     }],
 
     // Require that the first prop in a JSX element be on a new line when the element is multiline
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
-    'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
+    'react/jsx-first-prop-new-line': ['error', 'never'],
 
     // Enforce spacing around jsx equals signs
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
@@ -229,7 +229,7 @@ module.exports = {
 
     // Enforce JSX indentation
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
-    'react/jsx-indent': ['error', 2],
+    'react/jsx-indent': ['error', 4],
 
     // Disallow target="_blank" on links
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
@@ -237,7 +237,7 @@ module.exports = {
 
     // only .jsx files may have JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-    'react/jsx-filename-extension': ['error', { extensions: ['.jsx'] }],
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
 
     // prevent accidental JS comments from being injected into JSX as text
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
@@ -281,7 +281,7 @@ module.exports = {
 
     // Prevent invalid characters from appearing in markup
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md
-    'react/no-unescaped-entities': 'error',
+    'react/no-unescaped-entities': 'warn',
 
     // Prevent passing of children as props
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md
@@ -326,6 +326,6 @@ module.exports = {
     react: {
       pragma: 'React',
       version: '15.0'
-    },
+    }
   }
 };

@@ -1,4 +1,4 @@
-# Airbnb React/JSX Style Guide
+# cargurus React/JSX Style Guide
 
 *A mostly reasonable approach to React and JSX*
 
@@ -168,11 +168,11 @@
   - Follow these alignment styles for JSX syntax. eslint: [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
 
     ```jsx
-    // bad
+    // good
     <Foo superLongParam="bar"
          anotherSuperLongParam="baz" />
 
-    // good
+    // bad
     <Foo
       superLongParam="bar"
       anotherSuperLongParam="baz"
@@ -184,8 +184,7 @@
     // children get indented normally
     <Foo
       superLongParam="bar"
-      anotherSuperLongParam="baz"
-    >
+      anotherSuperLongParam="baz">
       <Quux />
     </Foo>
     ```
@@ -430,15 +429,15 @@
     <Foo className="stuff" />
     ```
 
-  - If your component has multi-line properties, close its tag on a new line. eslint: [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
+  - If your component has multi-line properties, close its tag after props. eslint: [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
 
     ```jsx
-    // bad
+    // good
     <Foo
       bar="bar"
       baz="baz" />
 
-    // good
+    // bad
     <Foo
       bar="bar"
       baz="baz"
