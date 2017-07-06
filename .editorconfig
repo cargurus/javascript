@@ -1,9 +1,14 @@
+root = true
+
 [*]
-charset=utf-8
-end_of_line=lf
-insert_final_newline=false
-indent_style=space
-indent_size=4
+indent_style = space
+indent_size = 4
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+end_of_line = lf
+# editorconfig-tools is unable to ignore longs strings or urls
+max_line_length = null
 
 [{*.properties}]
 charset=ISO-8859-1
@@ -19,7 +24,7 @@ indent_size=2
 indent_style=space
 indent_size=4
 
-[{phpunit.xml.dist,*.jhm,*.xjb,*.rng,*.wsdl,*.fxml,*.plan,*.pom,*.xslt,*.jrxml,*.ant,*.svg,*.xul,*.xsl,*.xsd,*.tld,*.jnlp,*.wsdd,*.wadl,*.xml}]
+[{phpunit.xml.dist,*.jhm,*.xjb,*.rng,*.wsdl,*.fxml,*.plan,*.pom,*.xslt,*.jrxml,*.ant,*.svg,*.xul,*.xsl,*.xsd,*.tld,*.jnlp,*.wsdd,*.wadl,*.xml,*.md}]
 indent_style=space
 indent_size=2
 
@@ -51,4 +56,3 @@ indent_size=4
 [{*.yml,*.yaml}]
 indent_style=space
 indent_size=2
-
