@@ -76,9 +76,14 @@ module.exports = {
         'test.{js,jsx}', // repos with a single test file
         'test-*.{js,jsx}', // repos with multiple top-level test files
         '**/*.{test,spec,config}.{js,jsx}', // tests where the extension denotes that it is a test
+        '**/test/*',
+        '**/*.test.js',
+        '**/*.spec.js',
         '**/webpack-*.js', // webpack config
         '**/webpack.config.js', // webpack config
         '**/webpack.config.*.js', // webpack config
+        '**/build/*.js',
+        '**/*.config.js',
         '**/rollup.config.js', // rollup config
         '**/rollup.config.*.js', // rollup config
         '**/gulpfile.js', // gulp config
@@ -190,6 +195,17 @@ module.exports = {
 
     // Prevent importing the default as if it were named
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
-    'import/no-named-default': 'error'
+    'import/no-named-default': 'error',
+
+    // Reports if a module's default export is unnamed
+    // https://github.com/benmosher/eslint-plugin-import/blob/d9b712ac7fd1fddc391f7b234827925c160d956f/docs/rules/no-anonymous-default-export.md
+    'import/no-anonymous-default-export': ['error', {
+        allowArray: false,
+        allowArrowFunction: false,
+        allowAnonymousClass: false,
+        allowAnonymousFunction: false,
+        allowLiteral: false,
+        allowObject: false,
+    }],
   },
 };
