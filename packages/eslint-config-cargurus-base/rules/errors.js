@@ -1,7 +1,7 @@
 module.exports = {
     rules: {
-        //indention rules
-        'indent': ['error', 4, {'SwitchCase': 1}],
+        // indention rules
+        indent: ['error', 4, { SwitchCase: 1 }],
 
         // require trailing commas in multiline object literals
         'comma-dangle': ['error', {
@@ -125,6 +125,6 @@ module.exports = {
 
         // ensure that the results of typeof are compared against a valid string
         // http://eslint.org/docs/rules/valid-typeof
-        'valid-typeof': ['error', {requireStringLiterals: true}]
+        'valid-typeof': ['error', { requireStringLiterals: true }]
     }
 };
