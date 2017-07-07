@@ -1,14 +1,20 @@
 {
-  "rules": {
-    // disabled because I find it tedious to write tests while following this rule
-    "no-shadow": 0,
+    "settings": {
+        "import/core-modules": [
+            "tape",
+            "path"
+        ]
+    },
+    "rules": {
+        // disabled because I find it tedious to write tests while following this rule
+        "no-shadow": 0,
 
-    //tab width of 4 spaces.
-    "indent" : ["error", 4, {"SwitchCase": 1}],
+        //tab width of 4 spaces.
+        "indent" : ["error", 4, {"SwitchCase": 1}],
 
-    "react/jsx-indent": ["error", 4],
+        "react/jsx-indent": ["error", 4],
 
-    // tests uses `t` for tape
-    "id-length": [2, {"min": 2, "properties": "never", "exceptions": ["t"]}]
-  }
+        // tests uses `t` for tape
+        "id-length": [2, {"min": 2, "properties": "never", "exceptions": ["t"]}]
+    }
 }

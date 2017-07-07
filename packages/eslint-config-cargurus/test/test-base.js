@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import test from 'tape';
 
-const base = require('../base');
+const base = require('../base.js');
 
 const files = { base };
 
