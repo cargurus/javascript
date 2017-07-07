@@ -7,10 +7,10 @@ import reactA11yRules from '../rules/react-a11y';
 const cli = new CLIEngine({
     useEslintrc: false,
     baseConfig: eslintrc,
-
     rules: {
+        indent: ['error', 4, { SwitchCase: 1 }],
         // It is okay to import devDependencies in tests.
-        'import/no-extraneous-dependencies': [2, { devDependencies: true }],
+        'import/no-extraneous-dependencies': [2, { devDependencies: true }]
     },
 });
 
@@ -51,12 +51,10 @@ test('validate react prop order', (t) => {
     renderDogs() {}
     render() { return <div />; }
 `));
-
         t.notOk(result.warningCount, 'no warnings');
         t.notOk(result.errorCount, 'no errors');
         t.deepEquals(result.messages, [], 'no messages in results');
     });
-
     t.test('order: when random method is first', (t) => {
         t.plan(2);
         const result = lint(wrapComponent(`
