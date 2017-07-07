@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-cargurus",
-    "version": "15.0.1",
+    "version": "15.0.2",
     "description": "Cargurus's ESLint config, following our styleguide",
     "main": "index.js",
     "scripts": {
@@ -30,7 +30,7 @@
     },
     "homepage": "https://github.com/cargurus/javascript",
     "dependencies": {
-        "eslint-config-cargurus-base": "^11.2.0"
+        "eslint-config-cargurus-base": "^11.2.1"
     },
     "devDependencies": {
         "babel-preset-airbnb": "^2.2.3",
