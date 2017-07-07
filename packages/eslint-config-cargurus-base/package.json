@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-cargurus-base",
-    "version": "11.2.0",
+    "version": "11.2.1",
     "description": "cargurus's base JS ESLint config, following our styleguide",
     "main": "index.js",
     "scripts": {
