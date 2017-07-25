@@ -2,13 +2,16 @@
 
 *A mostly reasonable approach to JavaScript forked from the [Airbnb](https://github.com/airbnb/javascript) style guide*
 
+Suggesting a Change
+
+  [Rule Change Request](https://github.com/cargurus/javascript/wiki/Change-Request)
+
 Other Style Guides
 
   - [ES5 (Deprecated)](https://github.com/cargurus/javascript/tree/es5-deprecated/es5)
   - [React](react/)
   - [CSS-in-JavaScript](css-in-javascript/)
   - [CSS & Sass](https://github.com/cargurus/css)
-  - [Ruby](https://github.com/cargurus/ruby)
 
 ## Table of Contents
 
